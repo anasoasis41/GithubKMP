@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import shared
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var greetingLbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        greetingLbl.text = Greeting().greeting()
     }
 
 
