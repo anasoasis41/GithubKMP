@@ -12,18 +12,19 @@
 		CB15973A22E9A6BB004BD5ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB15973822E9A6BB004BD5ED /* Main.storyboard */; };
 		CB15973C22E9A6BC004BD5ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB15973B22E9A6BC004BD5ED /* Assets.xcassets */; };
 		CB15973F22E9A6BC004BD5ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB15973D22E9A6BC004BD5ED /* LaunchScreen.storyboard */; };
-		CB15974C22E9B726004BD5ED /* shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB15974B22E9B726004BD5ED /* shared.framework */; };
-		CB15974D22E9B726004BD5ED /* shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB15974B22E9B726004BD5ED /* shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBC9991222F2058300F7CAF2 /* shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC9991122F2058200F7CAF2 /* shared.framework */; };
+		CBC9991322F2058300F7CAF2 /* shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBC9991122F2058200F7CAF2 /* shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBC9991622F2059E00F7CAF2 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC9991522F2059E00F7CAF2 /* BaseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CB15974E22E9B726004BD5ED /* Embed Frameworks */ = {
+		CBC9991422F2058300F7CAF2 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CB15974D22E9B726004BD5ED /* shared.framework in Embed Frameworks */,
+				CBC9991322F2058300F7CAF2 /* shared.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,8 +39,8 @@
 		CB15973B22E9A6BC004BD5ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB15973E22E9A6BC004BD5ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB15974022E9A6BC004BD5ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB15974622E9A89D004BD5ED /* shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = shared.framework; sourceTree = "<group>"; };
-		CB15974B22E9B726004BD5ED /* shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = shared.framework; path = "../../shared/build/xcode-frameworks/shared.framework"; sourceTree = "<group>"; };
+		CBC9991122F2058200F7CAF2 /* shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = shared.framework; path = "../../shared/build/xcode-frameworks/shared.framework"; sourceTree = "<group>"; };
+		CBC9991522F2059E00F7CAF2 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB15974C22E9B726004BD5ED /* shared.framework in Frameworks */,
+				CBC9991222F2058300F7CAF2 /* shared.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,8 +58,7 @@
 		CB15972822E9A6BB004BD5ED = {
 			isa = PBXGroup;
 			children = (
-				CB15974622E9A89D004BD5ED /* shared.framework */,
-				CB15974B22E9B726004BD5ED /* shared.framework */,
+				CBC9991122F2058200F7CAF2 /* shared.framework */,
 				CB15973322E9A6BB004BD5ED /* GithubKMP */,
 				CB15973222E9A6BB004BD5ED /* Products */,
 			);
@@ -81,6 +81,7 @@
 				CB15973B22E9A6BC004BD5ED /* Assets.xcassets */,
 				CB15973D22E9A6BC004BD5ED /* LaunchScreen.storyboard */,
 				CB15974022E9A6BC004BD5ED /* Info.plist */,
+				CBC9991522F2059E00F7CAF2 /* BaseView.swift */,
 			);
 			path = GithubKMP;
 			sourceTree = "<group>";
@@ -96,7 +97,7 @@
 				CB15972D22E9A6BB004BD5ED /* Sources */,
 				CB15972E22E9A6BB004BD5ED /* Frameworks */,
 				CB15972F22E9A6BB004BD5ED /* Resources */,
-				CB15974E22E9B726004BD5ED /* Embed Frameworks */,
+				CBC9991422F2058300F7CAF2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBC9991622F2059E00F7CAF2 /* BaseView.swift in Sources */,
 				CB15973722E9A6BB004BD5ED /* ViewController.swift in Sources */,
 				CB15973522E9A6BB004BD5ED /* AppDelegate.swift in Sources */,
 			);
@@ -328,7 +330,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8SD48UYF32;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../shared/build/xcode-frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../../shared/build/xcode-frameworks",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = GithubKMP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -348,7 +353,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8SD48UYF32;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../shared/build/xcode-frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../../shared/build/xcode-frameworks",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = GithubKMP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
